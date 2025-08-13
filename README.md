@@ -12,5 +12,5 @@
 
 # Links ★
 
-[Site](https://site-game-master-2.onrender.com/) <br>
+[Site](https://projeto-game-master.onrender.com) <br>
 [Protótipo](https://www.canva.com/design/DAGSVuVnmig/20ZaWNkxj01ux7hcYh7QMw/edit)
