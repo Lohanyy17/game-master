@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    --fonte-primaria: "Big Shoulders Display", sans-serif;
+    --fonte-secundaria: "DM Sans", sans-serif;
+
+    --cor-primaria:#ffffff;
+    --cor-secundaria:#c9090fd4;
+}
+
+.background{
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
+}
+
+.background img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 6px;
+}
+
+.logo{
+    margin-left: 30px;
+}
+ 
+.titulo{
+    margin-top: -50px;
+}
+
+.titulo h1{
+    margin-top: 120px;
+    margin-left: 800px;
+    font-size: 90px;
+    color: #ffffff;
+    font-family: var(--fonte-primaria);
+}
+ 
+.titulo h2{
+    position: fixed;
+
+    margin-top: -75px;
+    margin-left: 950px;
+    font-size: 100px;
+ 
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    text-shadow: 0vw 0vw 1vw var(--cor-secundaria), 0 0 2vw var(--cor-secundaria)
+}
+
+ul.navigation {
+    position: fixed;
+    right: 30px;
+    list-style-type: none;
+    display: flex; /*tirar o formato "lista"*/
+    gap: 30px; /* Espaçamento entre os itens do menu */
+    margin-top: 15px;
+    
+}
+ 
+.navigation_link{
+    margin-top: 200px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+ 
+    position: relative;
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+}
+ 
+.navigation_link:hover{
+    color: var(--cor-secundaria);
+}
+ 
+.navigation_link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+ 
+    width: 60%;
+    height: 1px;
+    background: var(--cor-secundaria);
+ 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+ 
+.navigation_link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+.arthur_bola{
+    position: fixed; /* Fixa a imagem na tela em algum canto da tela */
+    left: 0; /* Posiciona no canto direito deixando em 0 pixels de distância */
+    bottom: 0; /* Posiciona no canto inferior deixando em 0 pixels de distância  */
+    z-index: 1; /* Mantém a imagem em uma camada superior se necessário */
+}
+
+.arthur_bola{
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.arthur_bola:hover{
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse estiver sobre ela */
+}
+
+
+
+/* transition: transform 0.3s ease;  
+Define uma transição suave para a propriedade transform.
+A transição ocorrerá ao longo de 0.3 segundos com uma função de tempo 'ease'.
+*/
+
+
+/* transform: scale(1.1); 
+Aumenta a escala da imagem em 10% quando o mouse está sobre ela.
+Isso cria um efeito de zoom.
+*/
+
+
+
+.imagens{
+    margin-left: -60px;
+
+    width: 330px; 
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    z-index: 1; 
+}
+
+.ghost{
+    position: absolute;
+    margin-left: 720px;
+    margin-top: -262px;
+}
+
+.ghost {
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.ghost:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse estiver sobre ela */
+}
+
+
+
+.resident{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -262px;
+}
+
+.resident{
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.resident:hover{
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse estiver sobre ela */
+}
+
+
+
+.sekiro{
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: -262px;
+}
+
+.sekiro{
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.sekiro:hover{
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse estiver sobre ela */
+}
+
+
+
+.linhas{
+    position: fixed;
+    margin-top: 450px;
+}
+
+.linha_um{
+    color:var(--cor-secundaria);
+    margin-top: -350px;
+    margin-left: 700px;
+}
+
+.linha_dois{
+    color:var(--cor-secundaria);
+    margin-top: -60px;
+    margin-left: 990px;
+}
+
+.linha_tres{
+    color:var(--cor-secundaria);
+    margin-top: -60px;
+    margin-left: 1295px;
+}
+
+ 
