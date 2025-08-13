@@ -144,4 +144,5 @@ def excluir_jogos():
     return redirect('/consultar_jogos')
  
  
-app.run(host='127.0.0.1', port=80, debug=True) #debug atualiza em tempo real
+
+app.run(host='0.0.0.0', port=80, debug=True) #debug atualiza em tempo real
