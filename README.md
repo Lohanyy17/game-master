@@ -5,10 +5,10 @@
 # Desenvolvimento 
 
 ![print capa](/static/printgame.jpeg)
-![print jogo](/static/printjog.jpeg)
 ![print platc](/static/printplatc.jpeg)
-![print cad](/static/printcad.jpeg)
+![print jogo](/static/printjog.jpeg)
 ![print plat](/static/printplat.jpeg)
+![print cad](/static/printcad.jpeg)
 
 # Links
 
