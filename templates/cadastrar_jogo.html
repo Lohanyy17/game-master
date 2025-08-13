@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMaster</title>
+    <link rel="stylesheet" href="/static/styles/cadastro_jogo.css">
+</head>
+<body>
+    <header>
+        <img class="img"  src="/static/assets/logo.png" width="50px"  alt="">
+ 
+        <ul class="navigation" >
+ 
+            <li>
+                <a href="/" class="navigation_link">Início</a>
+            </li>
+            <li>
+                <a href="/cadastrar_plataformas" class="navigation_link">Cadastrar Plataforma</a>
+            </li>
+            <li>
+                <a href="/cadastrar_jogo" class="navigation_link">Cadastrar Jogo</a>
+            </li>
+ 
+            <li>
+                <a href="/consultar_plataformas" class="navigation_link">Plataformas</a>
+            </li>
+ 
+            <li>
+                <a href="/consultar_jogos" class="navigation_link">Jogos</a>
+            </li>
+ 
+        </ul>
+    </header>
+ 
+    <div>
+        <h2 class="titulo">Cadastro de Jogos</h2>
+ 
+        <div class="formulario">
+            <form action="/cadastrar_jogo" method="post">
+                <input type="text" name="nomej" id="nomej" placeholder="Nome" required> <br>
+ 
+                <input type="text" name="genero" id="genero" placeholder="Genero" required> <br>
+ 
+                <input type="date" name="data" id="data" required> <br>
+               
+                <button class="botao" type="submit">Cadastrar</button>
+ 
+            </form>
+        </div>        
+ 
+       
+        <div class="imagens">
+            <img class="miranha" src="../static/assets/miranha.png" width="400px" alt="">
+            <img class="fundo" src="../static/assets/fundo red.png" width="425px" alt="">
+        </div>
+ 
+ 
+    </div>    
+ 
+    <a class="link" href="/consultar_jogos">VEJA OS JOGOS JÁ CADASTRADOS</a>
+ 
+</body>

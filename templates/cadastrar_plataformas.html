@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMaster</title>
+    <link rel="stylesheet" href="/static/styles/cadastro.css">
+</head>
+ 
+<body>
+ 
+    <header>
+        <img class="img" src="/static/assets/logo.png" width="50px" alt="">
+        <ul class="navigation" >
+
+            <li>
+                <a href="/" class="navigation_link">Início</a>
+            </li>
+            <li>
+                <a href="/cadastrar_plataformas" class="navigation_link">Cadastrar Plataforma</a>
+            </li>
+            <li>
+                <a href="/cadastrar_jogo" class="navigation_link">Cadastrar Jogo</a>
+            </li>
+
+            <li>
+                <a href="/consultar_plataformas" class="navigation_link">Plataformas</a>
+            </li>
+
+            <li>
+                <a href="/consultar_jogos" class="navigation_link">Jogos</a>
+            </li>
+
+        </ul>
+    </header>
+ 
+<main>
+    <h2>Cadastro de Plataformas</h2>
+    <div class="cadastro_plataformas">
+ 
+        <div class="formulario">
+            <form action="" method="post" enctype="multipart/form-data">
+ 
+            <label for=""></label>
+            <input class="nome" type="text" name="nome" id="nome" required placeholder="Nome">
+ 
+            <label for=""></label>
+            <input class="fabricante" type="text" name="fabricante" id="fabricante" required placeholder="Fabricante">
+ 
+            <button class="botao animate__animated" type="submit">Cadastrar</button>
+
+            <a class="link" class="veja_as_plataformas" href="/consultar_plataformas">VEJA AS PLATAFORMAS JÁ CADASTRADAS</a>
+
+        </div>
+ 
+            <div class="imagem" >
+                <img src="/static/assets/controle.png" alt="" width="600" height="500">
+            </div>
+    </div>
+ 
+ 
+</main>
+ 
+</body>
+</html>

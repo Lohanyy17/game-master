@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMaster</title>
+    <link rel="stylesheet" href="/static/styles/consultar_jogos.css">
+</head>
+<body>
+    <header>
+        <img class="img"  src="/static/assets/logo.png" width="50px"  alt="">
+ 
+        <ul class="navigation" >
+
+            <li>
+                <a href="/" class="navigation_link">Início</a>
+            </li>
+            <li>
+                <a href="/cadastrar_plataformas" class="navigation_link">Cadastrar Plataforma</a>
+            </li>
+            <li>
+                <a href="/cadastrar_jogo" class="navigation_link">Cadastrar Jogo</a>
+            </li>
+
+            <li>
+                <a href="/consultar_plataformas" class="navigation_link">Plataformas</a>
+            </li>
+
+            <li>
+                <a href="/consultar_jogos" class="navigation_link">Jogos</a>
+            </li>
+
+        </ul>
+    </header>
+ 
+    <div class="div">
+        <h2 class="titulo">Jogos Cadastrados</h2>
+        <table class="tabela">
+            <tr class="titulos_tabela"> <!--Adiciona como titulo de cabeçalho e em negrito -->
+                <th>Item</th> <!--Adiciona um titulo-->
+                <th>Título</th>
+                <th>Gênero</th>
+                <th>Lançamento</th>
+                <th>Cód. Plataforma</th>
+                <th>Código</th>
+                <th>Deletar</th>
+            </tr>
+            {% for dados in dados_lista %}
+                <tr class="dados">
+                    <td>{{ dados.linha + 1 }}</td> <!--Adiciona uma informação comum-->
+                    <td>{{ dados.titulo }}</td>
+                    <td> {{ dados.genero }}</td>
+                    <td> {{ dados.lancamento }}</td>
+                    <td> {{ dados.cod_plataforma }}</td>
+                    <td> {{ dados.cod_jogos }}</td>
+                    <td>
+                        <a href="/excluir_jogos?linha={{ dados.linha }}" class="deletar">Excluir</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        
+
+        <a href="/cadastrar_jogo">
+        <button class= "botao_voltar" type="submit">Voltar</button>
+        </a>
+    </div>
+ 
+    <div>
+        <img class="cego" src="/static/assets/cego.png" alt="">
+    </div>
+</body>
+</html>
