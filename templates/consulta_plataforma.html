@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMaster</title>
+    <link rel="stylesheet" href="/static/styles/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#">Início</a>
+        <a href="/cadastro_plataformas">Cadastro de Plataformas</a>
+        <a href="/consulta_plataforma">Consulta de Plataformas</a>
+        <a href="#">Cadastro de Jogos</a>
+        <a href="#">Consulta de Jogos</a>
+    </nav>
+
+    <div class="div">
+        <h2 class="titulo">Plataformas Cadastradas</h2>
+        <table>
+            <tr class="titulos_tabela"> <!--Adiciona como titulo de cabeçalho e em negrito -->
+                <th>Item</th> <!--Adiciona um titulo-->
+                <th>Nome</th>
+                <th>Fabricante</th>
+                <th>Opções</th>
+            </tr>
+            {% for dados in dados_lista %} 
+                <tr>
+                    <td>{{ dados.linha + 1 }}</td> <!--Adiciona uma informação comum-->
+                    <td>{{ dados.nome }}</td>
+                    <td> {{ dados.fabricante }}</td>
+                    <td>  
+                        <label for="imagem">Imagem da Plataforma:</label>  
+                        <input type="file" name="imagem" id="imagem" accept="image/*" required></td>
+                    <td>
+                        <a href="/excluir_plataforma?linha={{ dados.linha }}" class="">Excluir</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <button type="submit">Voltar</button>
+    </div>
+</body>
+</html>
