@@ -4,7 +4,11 @@
 
 # Desenvolvimento 
 
-
+![print capa](/static/printgame.jpeg)
+![print cad](/static/printcad.jpeg)
+![print plat](/static/printplat.jpeg)
+![print jogo](/static/printjog.jpeg)
+![print platc](/static/printplatc.jpeg)
 
 # Links
 
