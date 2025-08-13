@@ -10,7 +10,7 @@
 ![print plat](/static/printplat.jpeg)
 ![print cad](/static/printcad.jpeg)
 
-# Links ▶
+# Links ★
 
 [Site](https://site-game-master-2.onrender.com/) <br>
 [Protótipo](https://www.canva.com/design/DAGSVuVnmig/20ZaWNkxj01ux7hcYh7QMw/edit)
